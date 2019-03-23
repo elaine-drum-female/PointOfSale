@@ -12,8 +12,8 @@
  * system auth (emp)
  
  # Tasks
- [ ] Design front-end UI
- [ ] Design database tables
- [ ] Design database api
- [ ] Design front-end <-> back-end api flows
- [ ] Design back-end express routes
+ - [ ] Design front-end UI
+ - [ ] Design database tables
+ - [ ] Design database api
+ - [ ] Design front-end <-> back-end api flows
+ - [ ] Design back-end express routes

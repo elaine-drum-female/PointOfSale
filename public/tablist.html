@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html en="us">
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mucky Duck</title>
+		<!-- Setup Bootstrap, Font Awesome, JQuery and custom assets -->
+        <link rel="stylesheet" type="text/css" href="/styles/resets.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/styles/tablist.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery.js"></script>
+    </head>
+    <body>     
+        <h4 class="tablist-title">Open Tabs</h4>  
+        <div class="tablist-page"> 
+            <div class="tab-div">
+                <button class="btn btn-default tab-button">Bar Left</br>1001</button><span class="tab-label" id="tab-name">Mike</span>   
+            </div>
+            <div class="tab-div">
+                <button class="btn btn-default tab-button">Bar Left</br>1002</button><span class="tab-label" id="tab-name">Rachel</span>   
+            </div>
+            <div class="tab-div">
+                <button class="btn btn-default tab-button">Bar Left</br>1003</button><span class="tab-label" id="tab-name">Pam</span>   
+            </div>
+            <div class="tab-div">
+                <button class="btn btn-default tab-button">Bar Left</br>1004</button><span class="tab-label" id="tab-name">Susanne</span>   
+            </div>
+            <div class="tab-div">
+                <button class="btn btn-default tab-button">Bar Left</br>1005</button><span class="tab-label" id="tab-name">John</span>   
+            </div>
+            <div class="tab-div">
+                <button class="btn btn-default tab-button">Bar Left</br>1006</button><span class="tab-label" id="tab-name">Sandra</span>   
+            </div>
+        </div>
+        <div class="text-center cfix">
+            <button class="btn btn-success" id="button-new-tab">New Tab</button>
+            <button class="btn btn-danger" id="button-exit">Exit</button>
+            <p id="message-area"></p>
+        </div>
+    </body>
+    <script src="/js/tablist.js" type="text/javascript"></script>
+</html>

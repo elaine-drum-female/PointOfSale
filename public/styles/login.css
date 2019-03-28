@@ -1,0 +1,55 @@
+/*
+ *  CSS for the login  page
+ */
+
+body {
+  background-color: #000;
+}
+
+.login-title {
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.login-page {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.login-button {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.button-number {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+#button-clear,
+#button-ok {
+  font-size: 30px;
+}
+
+.login-button:hover { 
+    background-color: blue;
+    color: white;
+}
+
+#button-exit {
+  font-size: 20px;
+  margin-top: 20px;
+  width: 100px;
+}
+
+#message-area {
+  font-size: 20px;
+  margin-top: 10px;
+  color: red;
+}

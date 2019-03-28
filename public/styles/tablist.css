@@ -1,0 +1,69 @@
+/*
+ *  CSS for the newtab page
+ */
+
+body {
+  background-color: #000;
+}
+
+.tablist-page {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tablist-title {
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.newtab-label {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+#tab-name {
+  color: #fff;
+  font-size: 15px;
+}
+
+.tab-div {
+    float: left;
+}
+
+.tab-label {
+    margin-left: 10px;    
+    margin-right: 20px
+}
+
+.tab-button {
+  height: 75px;
+  width: 75px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  border-radius: 5px;  
+}
+
+.tab-button:hover { 
+    background-color: blue;
+    color: white;
+}
+
+#button-new-tab {
+  margin-top: 20px;
+  margin-right: 100px;
+  width: 100px;
+}
+
+#button-exit {
+  margin-top: 20px;
+  width: 100px;
+}
+
+#message-area {
+  font-size: 20px;
+  margin-top: 10px;
+  color: red;
+}

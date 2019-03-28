@@ -76,7 +76,7 @@ body {
   width: 120px;
 }
 
-#item-description {
+.main-left-side {
     font-size: 15px;
     font-weight: bold;
     margin-left: 10px;
@@ -89,7 +89,7 @@ body {
     flex-direction: column;
 }
 
-#item-total {
+.main-right-side {
     font-size: 15px;
     font-weight: bold;
     float: right;

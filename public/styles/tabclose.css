@@ -77,11 +77,18 @@ body {
   width: 120px;
 }
 
-#item-description {
+.tab-left-side {
     font-size: 15px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-left: 10px;
     float: left;
+}
+
+.tab-right-side {
+    font-size: 15px;
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
 }
 
 .close-page-left {
@@ -90,17 +97,19 @@ body {
     flex-direction: column;
 }
 
-#item-total {
-    font-size: 15px;
-    font-weight: bold;
-    float: right;
-    margin-right: 10px;
-}
-
 #message-area {
   font-size: 20px;
   margin-top: 10px;
   color: red;
+}
+
+
+.tab-line-detail {
+    line-height: 0.1;
+    margin-top: 0x;
+    margin-bottom: 0x;
+    text-align: center;
+    
 }
 
 #myModal .close {

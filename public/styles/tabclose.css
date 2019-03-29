@@ -1,0 +1,161 @@
+/*
+ *  CSS for the tab close page
+ */
+
+body {
+  background-color: #000;
+}
+
+.close-page-top,
+.close-page-bottom {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.close-top-button {
+  font-size: 15px;
+  font-weight: bolder;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  width: 120px;
+}
+
+.close-top-button:hover,
+.close-middle-button:hover,
+.close-right-button:hover,
+.close-bottom-button:hover { 
+    background-color: blue;
+    color: white;
+}
+
+.close-page-left {
+    float: left;
+    background: green;
+    width: 40%;
+    height: 550px;
+    margin-left: 10px;
+}
+
+.close-page-middle {
+    float: left;
+    width: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 120px;
+}
+
+.close-middle-button {
+  font-size: 15px;
+  font-weight: bolder;
+  width: 130px;
+  margin-bottom: 10px;  
+}
+
+.close-page-right {
+    float: left;
+    background: green;
+    width: 40%;
+    height: 550px;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+.close-right-button {
+  font-size: 15px;
+  font-weight: bolder;
+  width: 130px;
+  margin-left: 15px;
+  margin-bottom: 10px;  
+}
+
+.close-bottom-button {
+  font-size: 15px;
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  width: 120px;
+}
+
+.tab-left-side {
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 10px;
+    float: left;
+}
+
+.tab-right-side {
+    font-size: 15px;
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
+}
+
+.close-page-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#message-area {
+  font-size: 20px;
+  margin-top: 10px;
+  color: red;
+}
+
+
+.tab-line-detail {
+    line-height: 0.1;
+    margin-top: 0x;
+    margin-bottom: 0x;
+    text-align: center;
+    
+}
+
+#myModal .close {
+    display: none;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .close-page-left {
+        float: none;
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .close-page-middle {
+        float: none;
+        display: block;
+    }
+
+    .close-page-right {
+        float: none;
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .close-page-left {
+        float: none;
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .close-page-middle {
+        float: none;
+        display: block;
+    }
+
+    .close-page-right {
+        float: none;
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}

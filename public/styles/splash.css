@@ -1,0 +1,58 @@
+/*
+ * CSS for the splash page
+ */
+
+body {
+  background-color: #000;
+}
+
+#splash-image {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #dd9c38; 
+  margin-top: 20px; 
+    
+  position: relative;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-name: moveimage;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+
+  /* Standard syntax */
+  animation-name: moveimage;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes moveimage {
+  0%   {left:0px; top:50px;}
+  25%  {left:20%; top:50px;}
+  50%  {left:40%; top:200px;}
+  75%  {left:60%; top:300px;}
+  100% {left:10%; top:300px;}
+}
+
+/* Standard syntax */
+@keyframes moveimage {
+  0%   {left:0px; top:50px;}
+  25%  {left:20%; top:50px;}
+  50%  {left:40%; top:200px;}
+  75%  {left:60%; top:300px;}
+  100% {left:10%; top:300px;}
+}
+
+@keyframes pulse {
+  from { transform: scale(1)   ; opacity: 1;    }
+  to   { transform: scale(0.75); opacity: 0.25; }
+}
+
+.list-group-item {
+  line-height: 2.5;
+}

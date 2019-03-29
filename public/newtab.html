@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html en="us">
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mucky Duck</title>
+		<!-- Setup Bootstrap, Font Awesome, JQuery and custom assets -->
+        <link rel="stylesheet" type="text/css" href="/styles/resets.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/styles/newtab.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery.js"></script>
+    </head>
+    <body> 
+        <div class="newtab-info">       
+            <h2 class="newtab-title">Create New Tab</h2>       
+            <span class="newtab-label">Tab Name: </span><span id="tab-name"></span>
+        </div> 
+        <div class="newtab-keyboard">
+            <div class="newtab-row-1">
+                <button class="btn btn-default newtab-button newtab-button-char">1</button>
+                <button class="btn btn-default newtab-button newtab-button-char">2</button>
+                <button class="btn btn-default newtab-button newtab-button-char">3</button>
+                <button class="btn btn-default newtab-button newtab-button-char">4</button>
+                <button class="btn btn-default newtab-button newtab-button-char">5</button>
+                <button class="btn btn-default newtab-button newtab-button-char">6</button>
+                <button class="btn btn-default newtab-button newtab-button-char">7</button>
+                <button class="btn btn-default newtab-button newtab-button-char">8</button>
+                <button class="btn btn-default newtab-button newtab-button-char">9</button>
+                <button class="btn btn-default newtab-button newtab-button-char">0</button>
+            </div>
+            <div class="newtab-row-2">
+                <button class="btn btn-default newtab-button newtab-button-char">Q</button>
+                <button class="btn btn-default newtab-button newtab-button-char">W</button>
+                <button class="btn btn-default newtab-button newtab-button-char">E</button>
+                <button class="btn btn-default newtab-button newtab-button-char">R</button>
+                <button class="btn btn-default newtab-button newtab-button-char">T</button>
+                <button class="btn btn-default newtab-button newtab-button-char">Y</button>
+                <button class="btn btn-default newtab-button newtab-button-char">U</button>
+                <button class="btn btn-default newtab-button newtab-button-char">I</button>
+                <button class="btn btn-default newtab-button newtab-button-char">O</button>
+                <button class="btn btn-default newtab-button newtab-button-char">P</button>
+            </div>
+            <div class="newtab-row-3">
+                <button class="btn btn-default newtab-button newtab-button-char">A</button>
+                <button class="btn btn-default newtab-button newtab-button-char">S</button>
+                <button class="btn btn-default newtab-button newtab-button-char">D</button>
+                <button class="btn btn-default newtab-button newtab-button-char">F</button>
+                <button class="btn btn-default newtab-button newtab-button-char">G</button>
+                <button class="btn btn-default newtab-button newtab-button-char">H</button>
+                <button class="btn btn-default newtab-button newtab-button-char">J</button>
+                <button class="btn btn-default newtab-button newtab-button-char">K</button>
+                <button class="btn btn-default newtab-button newtab-button-char">L</button>
+            </div>
+            <div class="newtab-row-4">
+                <button class="btn btn-default newtab-button newtab-button-char">/</button>
+                <button class="btn btn-default newtab-button newtab-button-char">Z</button>
+                <button class="btn btn-default newtab-button newtab-button-char">X</button>
+                <button class="btn btn-default newtab-button newtab-button-char">C</button>
+                <button class="btn btn-default newtab-button newtab-button-char">V</button>
+                <button class="btn btn-default newtab-button newtab-button-char">B</button>
+                <button class="btn btn-default newtab-button newtab-button-char">N</button>
+                <button class="btn btn-default newtab-button newtab-button-char">M</button>
+                <button class="btn btn-default newtab-button newtab-button-char">*</button>
+                <button class="btn btn-default newtab-button newtab-button-char">!</button>
+            </div>
+            <div class="newtab-row-5">
+                <button class="btn btn-default newtab-button" id="button-clear">Clear</button>
+                <button class="btn btn-default newtab-button" id="button-space">Space</button>
+                <button class="btn btn-default newtab-button" id="button-backspace">Backspace</button>
+            </div>
+            <div class="newtab-row-6">
+                <button class="btn btn-default newtab-button" id="button-ok">OK</button>
+                <button class="btn btn-default newtab-button" id="button-cancel">Cancel</button>
+            </div>            
+            <p id="message-area"></p>
+        </div>
+    </body>
+    <script src="/js/newtab.js" type="text/javascript"></script>
+</html>

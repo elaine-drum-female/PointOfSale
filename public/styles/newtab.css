@@ -1,0 +1,78 @@
+/*
+ *  CSS for the newtab page
+ */
+
+body {
+  background-color: #000;
+}
+
+.newtab-info {
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.newtab-title {
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.newtab-label {
+    color: #fff;
+    font-size: 20px;
+}
+
+.tab-name {
+  color: #fff;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.newtab-keyboard {
+    text-align: center;
+}
+
+.newtab-button {
+  height: 75px;
+  width: 75px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: aqua;
+}
+
+.newtab-button:hover { 
+    background-color: blue;
+    color: white;
+}
+
+#button-clear,
+#button-backspace {
+    width: 100px;
+}
+
+#button-space {
+    width: 300px;
+}
+
+#button-ok {
+  margin-top: 20px;
+  margin-right: 100px;
+  width: 100px;
+}
+
+#button-cancel {
+  margin-top: 20px;
+  width: 100px;
+}
+
+#message-area {
+  font-size: 20px;
+  margin-top: 10px;
+  color: red;
+}

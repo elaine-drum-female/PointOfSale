@@ -8,6 +8,13 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/api/drinks", function(req, res) {
+    db.drink.findAll({}).then(function(dbdrinks) {
+      console.log(dbdrinks);
+      return res.json(dbdrinks);
+    });
+  });
+
   // Create a new example
   app.post("/api/examples", function(req, res) {
     db.Example.create(req.body).then(function(dbExample) {

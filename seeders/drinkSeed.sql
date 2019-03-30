@@ -14,6 +14,6 @@ CREATE TABLE IF NOT EXISTS drink(
    PRIMARY KEY (id)
 );
 
-INSERT INTO drink (drink_type, drink_name, price, quantity)
-VALUES ("alcohol", "Corona XL Light", 9.00, 1);
+INSERT INTO drink (drink_type, drink_name, price, quantity, updatedAt, createdAt)
+VALUES ("alcohol", "Corona XL Light", 9.00, 1, CURDATE(), CURDATE());
 

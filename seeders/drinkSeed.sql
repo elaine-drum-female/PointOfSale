@@ -15,5 +15,5 @@ CREATE TABLE IF NOT EXISTS drink(
 );
 
 INSERT INTO drink (drink_type, drink_name, price, quantity)
-VALUES ("alcohol", "Smirnoff", 9.00, 1);
+VALUES ("alcohol", "Corona XL Light", 9.00, 1);
 

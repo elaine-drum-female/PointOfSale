@@ -5,7 +5,7 @@ DROP DATABASE IF EXISTS testdb;
 CREATE DATABASE testdb;
 USE pos;
 
-CREATE TABLE IF NOT EXISTS drink(
+CREATE TABLE IF NOT EXISTS drinks(
    id INT AUTO_INCREMENT,
    drink_type VARCHAR(45),
    drink_name VARCHAR(45),
@@ -14,6 +14,6 @@ CREATE TABLE IF NOT EXISTS drink(
    PRIMARY KEY (id)
 );
 
-INSERT INTO drink (drink_type, drink_name, price, quantity, updatedAt, createdAt)
-VALUES ("alcohol", "Corona XL Light", 9.00, 1, CURDATE(), CURDATE());
 
+INSERT INTO drinks (drink_type, drink_name, price, quantity, updatedAt, createdAt)
+VALUES ("alcohol", "Corona XL Light", 9.00, 1, CURDATE(), CURDATE());

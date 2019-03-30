@@ -9,7 +9,7 @@ module.exports = function(app) {
   });
 
   app.get("/api/drinks", function(req, res) {
-    db.drink.findAll({}).then(function(dbdrinks) {
+    db.drinks.findAll({}).then(function(dbdrinks) {
       console.log(dbdrinks);
       return res.json(dbdrinks);
     });

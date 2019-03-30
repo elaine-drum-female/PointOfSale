@@ -20,6 +20,12 @@ module.exports = function(app) {
       return res.json(dbfood);
     });
   });
+  app.get("/api/checks", function(req, res) {
+    db.checks.findAll({}).then(function(dbchecks) {
+      console.log(dbchecks);
+      return res.json(dbchecks);
+    });
+  });
 
   // Create a new example
   app.post("/api/examples", function(req, res) {

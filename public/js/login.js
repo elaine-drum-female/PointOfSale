@@ -2,6 +2,13 @@
 // Let the dust settle before getting started.
 //
 $(document).ready(function() {
+  // Local storage
+  if (localStorage.getItem("posSystem")) {
+    var posSystem = JSON.parse(localStorage.getItem("posSystem"));
+  } else {
+    var posSystem = {};
+  }
+
   // Variable to hold the employee id
   var empId = "";
 
@@ -46,11 +53,38 @@ $(document).ready(function() {
     }
 
     //
-    // Ajax call to authenticate the employeee
+    // Ajax call to authenticate the employee
     //
+    var employee = {
+      username: "XXXX", // User name not required - Validation is only on the employee id
+      password: empId
+    };
 
-    // Clear employee id
-    empId = "";
-    location.href = "/tablist";
+    $.ajax("/api/auth", {
+      type: "POST",
+      data: employee,
+      success: function(resp) {
+        console.log(resp);
+
+        // Clear employee id
+        empId = "";
+
+        // Display message returned
+        $("#message-area").text(resp.message);
+
+        // Redirect to the tab list page
+        if (resp.rc === 0) {
+          posSystem.serverName = resp.serverName;
+          posSystem.serverID = resp.serverID;
+          posSystem.currentTabID = 0;
+          posSystem.openTabs = [];
+          localStorage.setItem("posSystem", JSON.stringify(posSystem));
+          location.href = "/tablist";
+        }
+      },
+      error: function(req, status, err) {
+        $("#message-area").text("Something went wrong: ", status, err);
+      }
+    });
   });
 });

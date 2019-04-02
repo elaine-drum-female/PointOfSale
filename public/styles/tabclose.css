@@ -30,7 +30,7 @@ body {
 
 .close-page-left {
     float: left;
-    background: green;
+    background: lightgreen;
     width: 40%;
     height: 550px;
     margin-left: 10px;
@@ -53,7 +53,7 @@ body {
 
 .close-page-right {
     float: left;
-    background: green;
+    background: lightskyblue;
     width: 40%;
     height: 550px;
     margin-left: 10px;
@@ -77,14 +77,14 @@ body {
   width: 120px;
 }
 
-.tab-left-side {
+.close-left-side {
     font-size: 15px;
     font-weight: bolder;
     margin-left: 10px;
     float: left;
 }
 
-.tab-right-side {
+.close-right-side {
     font-size: 15px;
     font-weight: bold;
     float: right;
@@ -110,6 +110,10 @@ body {
     margin-bottom: 0x;
     text-align: center;
     
+}
+
+#close-middle-button-close-tab {
+    display: none;
 }
 
 #myModal .close {

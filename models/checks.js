@@ -5,7 +5,8 @@ module.exports = (sequelize, DataTypes) => {
     items_ordered: DataTypes.STRING,
     sub_total: DataTypes.INTEGER,
     tip: DataTypes.INTEGER,
-    total: DataTypes.INTEGER
+    total: DataTypes.INTEGER,
+    open: DataTypes.BOOLEAN
   }, {});
   checks.associate = function(models) {
     // associations can be defined here

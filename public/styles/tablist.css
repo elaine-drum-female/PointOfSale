@@ -24,7 +24,7 @@ body {
     text-align: center;
 }
 
-#tab-name {
+.tab-name {
   color: #fff;
   font-size: 15px;
 }

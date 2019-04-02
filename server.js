@@ -1,16 +1,38 @@
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
+var path = require("path");
+var cookieParser = require("cookie-parser");
+var passport = require("passport");
+var logger = require("morgan");
+var flash = require("connect-flash");
 
 var db = require("./models");
 
 var app = express();
-var PORT = process.env.PORT || 3000;
 
 // Middleware
+app.use(logger("dev"));
+app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
+app.use(flash());
+
+var PORT = process.env.PORT || 3000;
+
+//Initialize the use of session
+app.use(
+  require("express-session")({
+    secret: "kjiidkkwJLksw09T6",
+    resave: true,
+    saveUninitialized: true
+  })
+);
+
+//Initialize Node Passport authentication library
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Handlebars
 app.engine(

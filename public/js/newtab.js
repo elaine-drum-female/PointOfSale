@@ -2,6 +2,12 @@
 // Let the dust settle before getting started.
 //
 $(document).ready(function() {
+  // Local storage
+  var posSystem = JSON.parse(localStorage.getItem("posSystem"));
+
+  // Tab object
+  var tabObject = {};
+
   // Array to hold the tabName
   var tabName = [];
 
@@ -52,15 +58,43 @@ $(document).ready(function() {
 
   // Create callback for click on the OK button
   $("#button-ok").click(function(event) {
-    // Clear message area
-    console.log("Tab name=" + tabName.join(""));
+    // Format tab name
+    var tab = tabName.join("").trim();
 
     // Ensure we have a tab name
-    if (tabName.join("").trim().length === 0) {
+    if (tab.length === 0) {
       $("#message-area").text("Please enter a tab name.");
       return;
     }
 
-    location.href = "/tablist";
+    // New tab object
+    var newTab = {
+      tab_name: tab,
+      items_ordered: "",
+      sub_total: 0,
+      tip: 0,
+      total: 0,
+      open: true,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    };
+
+    // Create a new tab
+    $.ajax("/api/newtab", {
+      type: "POST",
+      data: newTab,
+      success: function(resp) {
+        console.log(resp);
+        tabObject.tabId = resp.tabId;
+        tabObject.tabName = resp.tabName;
+        tabObject.items = [];
+        posSystem.openTabs.push(tabObject);
+        localStorage.setItem("posSystem", JSON.stringify(posSystem));
+        location.href = "/tablist";
+      },
+      error: function(req, status, err) {
+        $("#message-area").text("Something went wrong: ", status, err);
+      }
+    });
   });
 });

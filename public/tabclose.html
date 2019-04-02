@@ -29,18 +29,6 @@
         
         <div class="close-main">
             <div class="close-page-left">
-                <div class="item-detail cfix">                  
-                    <span class="tab-left-side">Subtotal</span>                
-                    <span class="tab-right-side">0.00</span> 
-                </div>
-                <div class="item-detail cfix">                  
-                    <span class="tab-left-side">Total</span>                
-                    <span class="tab-right-side">0.00</span> 
-                </div>
-                <div class="item-detail cfix">                  
-                    <span class="tab-left-side">Balance Due</span>                
-                    <span class="tab-right-side">0.00</span> 
-                </div>
             </div>
 
             <div class="close-page-middle">
@@ -48,21 +36,22 @@
                 <button class="btn btn-default close-middle-button" id="close-middle-button-increase-auth">Increase Auth</button>
                 <button class="btn btn-default close-middle-button" id="close-middle-button-print-auth">Print Auth</button>
                 <button class="btn btn-default close-middle-button" id="close-middle-button-close-out-auth">Close Out Auth</button>
+                <button class="btn btn-danger close-middle-button" id="close-middle-button-close-tab">Close Tab</button>
             </div>        
             <div class="close-page-right">
-                <button class="btn btn-default close-right-button" id="close-right-button-cash">Cash</button>
-                <button class="btn btn-default close-right-button" id="close-right-button-five">$5</button>
-                <button class="btn btn-default close-right-button" id="close-right-button-ten">$10</button>
-                <button class="btn btn-default close-right-button" id="close-right-button-twenty">$20</button>
-                <button class="btn btn-default close-right-button" id="close-right-button-fifty">$50</button>
-                <button class="btn btn-default close-right-button" id="close-right-button-hundred">$100</button>
-                <button class="btn btn-default close-right-button" id="close-right-button-visa">Visa</button>
-                <button class="btn btn-default close-right-button" id="close-right-button-mastercard">Master Card</button>
-                <button class="btn btn-default close-right-button" id="close-right-button-amex">Amex</button>
-                <button class="btn btn-default close-right-button" id="close-right-button-diners-club">Diners Club</button>
-                <button class="btn btn-default close-right-button" id="close-right-button-discover">Discover</button>
-                <button class="btn btn-default close-right-button" id="close-right-button-gift-card">Gift Card</button>
-                <button class="btn btn-default close-right-button" id="close-right-button-gift-certificate">Gift Certficate</button>
+                <button class="btn btn-success close-right-button" id="close-right-button-cash">Cash</button>
+                <button class="btn btn-success close-right-button" id="close-right-button-five">$5</button>
+                <button class="btn btn-success close-right-button" id="close-right-button-ten">$10</button>
+                <button class="btn btn-success close-right-button" id="close-right-button-twenty">$20</button>
+                <button class="btn btn-success close-right-button" id="close-right-button-fifty">$50</button>
+                <button class="btn btn-success close-right-button" id="close-right-button-hundred">$100</button>
+                <button class="btn btn-success close-right-button" id="close-right-button-visa">Visa</button>
+                <button class="btn btn-success close-right-button" id="close-right-button-mastercard">Master Card</button>
+                <button class="btn btn-success close-right-button" id="close-right-button-amex">Amex</button>
+                <button class="btn btn-success close-right-button" id="close-right-button-diners-club">Diners Club</button>
+                <button class="btn btn-success close-right-button" id="close-right-button-discover">Discover</button>
+                <button class="btn btn-success close-right-button" id="close-right-button-gift-card">Gift Card</button>
+                <button class="btn btn-success close-right-button" id="close-right-button-gift-certificate">Gift Certficate</button>
             </div>
         </div>
         <div class="close-page-bottom cfix">
@@ -83,7 +72,7 @@
                 <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title" id="tab-title">Check1</h4>
+                    <h4 class="modal-title" id="tab-title">Check</h4>
                 </div>
                 <div class="modal-body" id="tab-detail">
                     <div class="tab-address">
@@ -101,35 +90,27 @@
                         <p class="tab-line-detail">ID #: <span id="tab-id"></span</p>
                     </div>
                     <div class="item-detail cfix">                  
-                        <span class="tab-left-side">ITEM</span>                
-                        <p class="tab-right-side"><span id="item-quantity">QTY </span><span>PRICE</span></p> 
+                        <span class="close-left-side">ITEM</span>                
+                        <p class="close-right-side"><span>PRICE</span></p> 
                     </div>
                     <p class="tab-line-detail">-----------------------------------------------------------------------</p>
 
                     <div class="tab-items">
-                        <div class="item-detail cfix">                  
-                            <span class="tab-left-side">Guinness</span>                
-                            <span class="tab-right-side" id="tab-item-amount">1&nbsp&nbsp$3.50</span>
-                        </div>
-                        <div class="item-detail cfix">                  
-                            <span class="tab-left-side">Jameson</span>                
-                            <span class="tab-right-side" id="tab-item-amount">1&nbsp&nbsp$4.00</span>
-                        </div>
                     </div>
 
                     <p class="tab-line-detail">-----------------------------------------------------------------------</p>
                     <div class="item-detail cfix">                  
-                        <span class="tab-left-side">Subtotal</span>                
-                        <span class="tab-right-side" id="tab-subtotal-amount">$7.50</span>
+                        <span class="close-left-side">Subtotal</span>                
+                        <span class="close-right-side" id="tab-subtotal-amount">$7.50</span>
                     </div>
                     <div class="item-detail cfix">                  
-                        <span class="tab-left-side">Total Taxes</span>                
-                        <span class="tab-right-side" id="tab-total-tax">$0.62</span> 
+                        <span class="close-left-side">Total Taxes</span>                
+                        <span class="close-right-side" id="tab-total-tax">$0.62</span> 
                     </div>
                     <p class="tab-line-detail">-----------------------------------------------------------------------</p>
                     <div class="item-detail cfix">                  
-                        <span class="tab-left-side" id="tab-amount-due-label">Amount Due</span>                
-                        <span class="tab-right-side" id="tab-amount-due">$8.12</span> 
+                        <span class="close-left-side" id="tab-amount-due-label">Amount Due</span>                
+                        <span class="close-right-side" id="tab-amount-due">$8.12</span> 
                     </div>
                     <p class="tab-line-detail">-----------------------------------------------------------------------</p>
                     <p class="tab-line-detail">Please Come Back!</p>

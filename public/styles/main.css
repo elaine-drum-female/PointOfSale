@@ -28,9 +28,11 @@ body {
 
 
 
+
 .main-page-left {
     float: left;
     background: #F6F3B2;
+
     width: 40%;
     height: 750px;
     margin-left: 59px;
@@ -71,6 +73,7 @@ body {
     text-align:center;
    
 }
+
 #top-button-left{
     margin-left:150px;
    
@@ -78,6 +81,7 @@ body {
 #bottom-button-close{
     margin-left:150px;
 }
+
 .main-right-drink-button,
 .main-right-food-button {
   font-size: 15px;

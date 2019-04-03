@@ -187,6 +187,24 @@ module.exports = function(app) {
       });
   });
 
+  // Update a tab
+  app.put("/api/updatetab/:id", function(req, res) {
+    console.log(req.body);
+    db.checks.update(req.body,
+      { where: { id: req.params.id } }).then(function (results) {
+        res.json(results);
+      });
+  });
+
+  // Close a tab
+  app.put("/api/closetab/:id", function(req, res) {
+    console.log(req.body);
+    db.checks.update(req.body,
+      { where: { id: req.params.id } }).then(function (results) {
+        res.json(results);
+      });
+  });
+
   // Create a new example
   app.post("/api/examples", function(req, res) {
     db.Example.create(req.body).then(function(dbExample) {

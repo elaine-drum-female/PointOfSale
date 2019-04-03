@@ -41,6 +41,7 @@ font-size: 15px;
 
 
 .close-page-left {
+
    float: left;
     background: #F6F3B2;
     width: 40%;
@@ -144,6 +145,7 @@ font-size: 15px;
     
 }
 
+
 .fa-times-circle{
   font-size:30px;
 }
@@ -157,6 +159,7 @@ font-size: 15px;
    opacity:0.75;
    color:black;
 }
+
 
 #close-middle-button-close-tab {
     display: none;

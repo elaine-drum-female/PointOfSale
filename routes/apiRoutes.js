@@ -162,6 +162,30 @@ module.exports = function(app) {
       return res.json(dbfood);
     });
   });
+  app.get("/api/checks", function(req, res) {
+    db.checks.findAll({}).then(function(dbchecks) {
+      console.log(dbchecks);
+      return res.json(dbchecks);
+    });
+  });
+
+  // Update a tab
+  app.put("/api/updatetab/:id", function(req, res) {
+    console.log(req.body);
+    db.checks.update(req.body,
+      { where: { id: req.params.id } }).then(function (results) {
+        res.json(results);
+      });
+  });
+
+  // Close a tab
+  app.put("/api/closetab/:id", function(req, res) {
+    console.log(req.body);
+    db.checks.update(req.body,
+      { where: { id: req.params.id } }).then(function (results) {
+        res.json(results);
+      });
+  });
 
   // Update a tab
   app.put("/api/updatetab/:id", function(req, res) {

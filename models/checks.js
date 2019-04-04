@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
     open: DataTypes.BOOLEAN
   }, {});
   checks.associate = function(models) {
-    // associations can be defined here
+    checks.belongsTo(models.employee);
   };
   return checks;
 }; 

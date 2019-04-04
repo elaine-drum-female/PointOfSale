@@ -9,6 +9,8 @@ $(document).ready(function() {
   $.ajax("/api/gettabs", {
     type: "GET",
     success: function(resp) {
+      console.log("We are here!!!");
+      console.log(resp);
       posSystem.openTabs = [];
       var mainDiv = $(".tablist-page");
       for (var i = 0; i < resp.length; i++) {
